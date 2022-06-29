@@ -2,4 +2,5 @@ This README describe the content of the different files within the folder of bas
 
 1. 0-current working directory - it's suppose to display the current working directory.
 2. 1-listit - it's suppose to display the list content of the current directory.
-3. 2-bring me home -it's suppose to bring you to home, even if you are in a different directory.  
+3. 2-bring me home -it's suppose to bring you to home, even if you are in a different directory. 
+4. 3-listfiles - this script show the files in a long format.  
