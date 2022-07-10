@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -e "$HOMEUSER" /etc/passwd | sort -u
