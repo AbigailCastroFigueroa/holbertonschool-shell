@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #This script is displaying "Best School" 10 times, but after the 4th loop, display "bad luck" and after the 8th loop, display "good luck", using the while loop and the if, elif and else statements.
 
-x=0
+x=1
 
 while [ $x -le 10 ] 
 do
-if [ $x -eq 3 ];
+if [ $x -eq 4 ];
 then 
 	echo "bad luck"
-elif [[ $x -eq 7 ]];
+elif [[ $x -eq 8 ]];
 then 
 	echo "good luck"
 else 
