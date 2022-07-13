@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#This script should only display user name, user id and home directory path for the user when executed.
+
+# shellcheck disable=SC2034
+
+FILENAME="/etc/passwd"
+
+while IFS=: read -r username password userid groupid comment homedir cmdshell
+do 
+	echo "$username:$userid:$homedir"
+done < $FILENAME
