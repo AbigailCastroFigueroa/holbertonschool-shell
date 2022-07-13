@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#This script should display fizzbuzz is the number is multiple of 3 or 5, fizz if is multiple of 3, and buzz if is multiple of 5 in a range of 1 to 100.
+
+x=1
+
+for ((x=1; x<=100; x++))
+do
+	if ! ((x%15)); then
+		echo "FizzBuzz"
+	elif ! ((x%3)); then
+		echo "Fizz"
+	elif ! ((x%5)); then 
+		echo "Buzz"
+	else echo "$x"
+	fi 
+done
