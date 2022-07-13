@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 #This script display the content of the current directory in a list format. 
 
+# shellcheck disable=SC2034
 
 for file in *
 do
-	 ls -1 "$file" | cut -d "-" -f 2 
+	find . -mindepth 1 -type f -name "$file"  | cut -d "-" -f 2 
 done
