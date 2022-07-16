@@ -8,11 +8,11 @@ if [ -e "$FILE" ]; then
 	if [ -f "$FILE" ]; then 
 		echo "$FILE is a regular file."
 	fi
-	if [ -s "$FILE" ]; then
-		echo "$FILE is not empty"
-	else
-		echo "$FILE is empty"
-	fi
+	    if [ -s "$FILE" ]; then
+		    echo "$FILE is not empty"
+	    else
+		    echo "$FILE is empty"
+	    fi
 else 
 		echo "$FILE not exist"
 fi 
