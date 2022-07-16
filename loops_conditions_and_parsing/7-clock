@@ -2,10 +2,11 @@
 #This script display 12 hours and 59 minutes using a while loop.
 
 x=0
-y=1
+
 while [ $x -le 12 ]
 do 
     echo "Hour: $x"
+    y=1
 	while  [ $y -le 59 ]
 	do 
 		echo "$y"
