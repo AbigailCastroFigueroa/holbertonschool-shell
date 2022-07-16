@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#This script help us know if the given file exist or not, and if it's a regular file, or if is empty or not.
+
+FILE="school"
+
+if [ -e "$FILE" ]; then 
+	echo "$FILE exists."
+	if [ -f "$FILE" ]; then 
+		echo "$FILE is a regular file."
+	fi
+	if [ -s "$FILE" ]; then
+		echo "$FILE is not empty"
+	else
+		echo "$FILE is empty"
+	fi
+else 
+		echo "$FILE not exist"
+fi 
